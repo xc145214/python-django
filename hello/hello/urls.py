@@ -2,7 +2,7 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 
 #import view
-from views import hello,current_datetime,hours_ahead
+from views import home_page,hello,current_datetime,hours_ahead
 
 
 urlpatterns = patterns('',
@@ -11,6 +11,9 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
+
+    # home
+    ('^$', home_page),
 
     # hello
     ('^hello/$', hello),

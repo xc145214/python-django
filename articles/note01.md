@@ -29,7 +29,8 @@ mysite/
 
 + urls.py：Django项目的URL设置。 可视其为你的django网站的目录。 目前，它是空的。
 
-启动项目：
+## 03 启动项目：
 执行命令：`python manage.py runserver`:
 ![runserver](../images/runserver.png)
+
 修改端口：`python manage.py runserver 9000`
